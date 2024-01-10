@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
     let temperaturaDescription = document.getElementById('temperatura-description')
     let ubication = document.getElementById('ubication')
     let iconAnimated = document.getElementById('icon-animated')
-    let vientoVelocidad = document.getElementById('viento-velocidad')
+    // let vientoVelocidad = document.getElementById('viento-velocidad')
 
     async function search(query) {
         try {
@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
             let ubic = (data.name)
             ubication.textContent = ubic
 
-            vientoVelocidad.textContent = `${data.wind.speed} m/s` 
+            // vientoVelocidad.textContent = `${data.wind.speed} m/s` 
 
             console.log(data.weather[0].main);
 
@@ -74,7 +74,7 @@ window.addEventListener('load', () => {
         search(searchbox.value)
 
     }
-
+    
     const searchform = document.getElementById('form')
     const searchbox = document.getElementById('city')
     form.addEventListener('submit', onSubmit, true);

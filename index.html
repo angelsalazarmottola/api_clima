@@ -12,50 +12,39 @@
     <link rel="stylesheet" href="style.css">
     <title>Api del clima</title>
 </head>
+
 <body>
-
-
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col -->
     <section>
         <div class="section-heading">
-            <h1>Api del clima</h1>
-            <p>Explora las condiciones climaticas de cientos de ciudades en esta web.</p>
+            <h1>API del clima</h1>
+            <h2 class="animation">Explora las condiciones climaticas de ciudades del mundo en esta web.</h2>
         </div>
 
-        <div id="form">
-            <form class="row g-3">
-                <div class="col-auto">
-                  <label for="inputPassword2" class="visually-hidden">Ingrese su Ciudad</label>
-                  <input type="text" class="form-control" id="city" placeholder="Ingrese su Ciudad">
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-3">Ingresar</button>
-                </div>
-              </form>
-        </div>
-        
+        <div id="form" class="form__group field">
+          <form class="form">
+            <div class="city">
+              <input id="city" required="" placeholder="Ingrese ciudad" class="form__field" type="text">
+              <label class="form__label" for="name">Ingrese Ciudad</label>
+            </div>
+            <div class="search">
+              <button type="submit">BUSCAR</button>
+            </div>
+          </form>
+        </div>  
     </section>
 
     <section>
         <div id="container">
-            <div id="box1">
-                <h2 id="temperatura-value"></h2>
-                <h2 id="temperatura-description"></h2>
+          <div class="cards">
+            <div class="card-header">
+              <span id="ubication"></span>
+              <span id="temperatura-description"></span>
             </div>
-            <div id="box2">
-                <h2 id="ubication"></h2>
-                <img id="icon-animated" src="" alt="" height="128" width="128">
+            <div class="card">
+              <img class="img-icon" id="icon-animated" src="" alt="" height="80" width="80">
             </div>
-            <div id="box3">
-                <h3> Veloc. del Viento</h3>
-                <h2 id="viento-velocidad"></h2>
-            </div>
+          </div>
+            <span id="temperatura-value" class="temp"></span>
         </div>
     </section>
     
